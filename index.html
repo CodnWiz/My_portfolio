@@ -11,224 +11,109 @@
     <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- NAVBAR -->
     <nav id="navbar" class="nav">
         <ul class="nav-list">
-            <li>
-                <a href="#welcome-section">Home</a>
-            </li>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#projects">Work</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
+            <li><a href="#welcome-section">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+        <div id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </div>
+        <div id="hamburger" class="hamburger"><i class="fas fa-bars"></i></div>
     </nav>
 
-    <div class="theme-toggle" id="theme-toggle">
-        <i class="fas fa-moon"></i>
-    </div>
-
-    <section id="welcome-section" class="welcome-section">
-        <h1>Hi there,Welcome to my portfolio</h1>
+    <!-- WELCOME SECTION -->
+    <section id="welcome-section" class="welcome-section fade-in-section">
+        <h1>Hi there, Welcome to my portfolio</h1>
         <h1>Ignitious here!</h1>
-        <p>Welcome to my track record <span class="typed-text" id="typed-text"></span></p>
+        <p>Welcome to my track record <span id="typed-text" class="typed-text"></span></p>
     </section>
 
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I am a dedicated and versatile professional with a background in education and a strong passion for technology and software development. After completing my Bachelor of Education at Walter Sisulu University, I expanded my skill set by earning a Web Development Certificate from freeCodeCamp, where I gained hands-on experience in JavaScript, HTML, CSS, and modern frameworks. My journey has been shaped by a love for problem-solving, teaching, and continuous learning.</p>
-                    <p>I am currently building my developer portfolio to showcase my skills in front-end and back-end development, as well as my understanding of algorithms and data structures. My long-term goal is to combine my love for teaching and technology to create innovative platforms that empower learners and simplify complex concepts. Outside of coding, I enjoy playing chess, listening to classical music, and practicing touch typing—all of which sharpen my focus and problem-solving mindset.</p>
-                </div>
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Profile" class="profile-img">
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section fade-in-section">
+        <div class="container about-content">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I am a dedicated and versatile professional with a background in education and a strong passion for technology and software development. After completing my Bachelor of Education at Walter Sisulu University, I earned a Web Development Certificate from freeCodeCamp, gaining hands-on experience in JavaScript, HTML, CSS, and modern frameworks.</p>
+                <p>My journey is shaped by problem-solving, teaching, and continuous learning. I am building this portfolio to showcase my front-end and back-end skills, algorithms, and data structures. Outside coding, I enjoy chess, classical music, and touch typing, all sharpening my focus and problem-solving mindset.</p>
             </div>
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Profile" class="profile-img">
         </div>
     </section>
 
-    <section id="skills" class="skills-section">
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills-section fade-in-section">
         <div class="container">
             <h2>My Skills</h2>
             <div class="skills-container">
-                <div class="skill">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML5</h3>
-                    <p>Semantic markup, accessibility, modern APIs</p>
-                </div>
-                <div class="skill">
-                    <i class="fab fa-css3-alt"></i>
-                    <h3>CSS3</h3>
-                    <p>Flexbox, Grid, animations, responsive design</p>
-                </div>
-                <div class="skill">
-                    <i class="fab fa-js"></i>
-                    <h3>JavaScript</h3>
-                    <p>ES6+, React, Vue, DOM manipulation</p>
-                </div>
-                <div class="skill">
-                    <i class="fab fa-react"></i>
-                    <h3>React</h3>
-                    <p>Hooks, Context API, Redux, Next.js</p>
-                </div>
-                <div class="skill">
-                    <i class="fab fa-node-js"></i>
-                    <h3>Node.js</h3>
-                    <p>Express, REST APIs, authentication</p>
-                </div>
-                <div class="skill">
-                    <i class="fas fa-database"></i>
-                    <h3>Databases</h3>
-                    <p>MongoDB, PostgreSQL, Firebase</p>
-                </div>
+                <div class="skill"><i class="fab fa-html5"></i><h3>HTML5</h3><p>Semantic markup, accessibility, modern APIs</p></div>
+                <div class="skill"><i class="fab fa-css3-alt"></i><h3>CSS3</h3><p>Flexbox, Grid, animations, responsive design</p></div>
+                <div class="skill"><i class="fab fa-js"></i><h3>JavaScript</h3><p>ES6+, React, Vue, DOM manipulation</p></div>
+                <div class="skill"><i class="fab fa-react"></i><h3>React</h3><p>Hooks, Context API, Redux, Next.js</p></div>
+                <div class="skill"><i class="fab fa-node-js"></i><h3>Node.js</h3><p>Express, REST APIs, authentication</p></div>
+                <div class="skill"><i class="fas fa-database"></i><h3>Databases</h3><p>MongoDB, PostgreSQL, Firebase</p></div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="projects-section">
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects-section fade-in-section">
         <h2 class="projects-section-header">These are some of my projects</h2>
-
         <div class="projects-grid">
-            <a
-                href="https://codepen.io/freeCodeCamp/full/zNqgVx"
-                target="_blank"
-                class="project project-tile"
-            >
-                <img
-                    class="project-image"
-                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
-                    alt="Tribute Page Project"
-                />
-                <p class="project-title">
-                    <span class="code">&lt;</span>
-                    Tribute Page
-                    <span class="code">&#47;&gt;</span>
-                </p>
+            <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank" class="project project-tile">
+                <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="Tribute Page Project"/>
+                <p class="project-title"><span class="code">&lt;</span> Tribute Page <span class="code">&#47;&gt;</span></p>
             </a>
-            <a
-                href="https://codepen.io/freeCodeCamp/full/qRZeGZ"
-                target="_blank"
-                class="project project-tile"
-            >
-                <img
-                    class="project-image"
-                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
-                    alt="Random Quote Machine"
-                />
-                <p class="project-title">
-                    <span class="code">&lt;</span>
-                    Random Quote Machine
-                    <span class="code">&#47;&gt;</span>
-                </p>
+            <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank" class="project project-tile">
+                <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" alt="Random Quote Machine"/>
+                <p class="project-title"><span class="code">&lt;</span> Random Quote Machine <span class="code">&#47;&gt;</span></p>
             </a>
-            <a
-                href="https://codepen.io/freeCodeCamp/full/wgGVVX"
-                target="_blank"
-                class="project project-tile"
-            >
-                <img
-                    class="project-image"
-                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
-                    alt="JavaScript Calculator"
-                />
-                <p class="project-title">
-                    <span class="code">&lt;</span>
-                    JavaScript Calculator
-                    <span class="code">&#47;&gt;</span>
-                </p>
+            <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="project project-tile">
+                <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" alt="JavaScript Calculator"/>
+                <p class="project-title"><span class="code">&lt;</span> JavaScript Calculator <span class="code">&#47;&gt;</span></p>
             </a>
-            <a
-                href="https://codepen.io/freeCodeCamp/full/mVEJag"
-                target="_blank"
-                class="project project-tile"
-            >
-                <img
-                    class="project-image"
-                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
-                    alt="Map Data Project"
-                />
-                <p class="project-title">
-                    <span class="code">&lt;</span>
-                    Map Data Across the Globe
-                    <span class="code">&#47;&gt;</span>
-                </p>
+            <a href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank" class="project project-tile">
+                <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg" alt="Map Data Project"/>
+                <p class="project-title"><span class="code">&lt;</span> Map Data Across the Globe <span class="code">&#47;&gt;</span></p>
             </a>
-            <a
-                href="https://codepen.io/freeCodeCamp/full/wGqEga"
-                target="_blank"
-                class="project project-tile"
-            >
-                <img
-                    class="project-image"
-                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png"
-                    alt="Wikipedia Viewer"
-                />
-                <p class="project-title">
-                    <span class="code">&lt;</span>
-                    Wikipedia Viewer
-                    <span class="code">&#47;&gt;</span>
-                </p>
+            <a href="https://codepen.io/freeCodeCamp/full/wGqEga" target="_blank" class="project project-tile">
+                <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png" alt="Wikipedia Viewer"/>
+                <p class="project-title"><span class="code">&lt;</span> Wikipedia Viewer <span class="code">&#47;&gt;</span></p>
             </a>
         </div>
-
-        <a
-            href="https://codepen.io/collection/yXgRzP/"
-            class="btn btn-show-all"
-            target="_blank"
-        >Show All<i class="fas fa-chevron-right"></i></a
-        >
+        <a href="https://codepen.io/collection/yXgRzP/" class="btn btn-show-all" target="_blank">Show All <i class="fas fa-chevron-right"></i></a>
     </section>
 
-    <section id="contact" class="contact-section">
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section fade-in-section">
         <div class="contact-section-header">
             <h2>Let's work together...</h2>
             <p>How do you take your coffee?</p>
         </div>
         <div class="contact-links">
-            <a
-                href="https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav"
-                target="_blank"
-                class="contact-details"
-            ><i class="fab fa-linkedin"></i> LinkedIn</a
-            >
-            <a
-                id="profile-link"
-                href="https://github.com/your-github"
-                target="_blank"
-                class="contact-details"
-            ><i class="fab fa-github"></i> GitHub</a
-            >
-            <a href="https://twitter.com/your-twitter" target="_blank" class="contact-details"
-            ><i class="fab fa-twitter"></i> Twitter</a
-            >
-            <a href="mailto:ignitious1@gmail.com" class="contact-details"
-            ><i class="fas fa-at"></i> ignitious1@gmail.com</a
-            >
-            <a href="tel:0724548322" class="contact-details"
-            ><i class="fas fa-mobile-alt"></i> 072-454-8322</a
-            >
+            <a href="https://www.linkedin.com/me" target="_blank" class="contact-details"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/your-github" target="_blank" class="contact-details"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://twitter.com/your-twitter" target="_blank" class="contact-details"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="mailto:ignitious1@gmail.com" class="contact-details"><i class="fas fa-at"></i> ignitious1@gmail.com</a>
+            <a href="tel:0724548322" class="contact-details"><i class="fas fa-mobile-alt"></i> 072-454-8322</a>
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
-        <p>
-            You can reach me at **ignitious1@gmail.com** or **0724548322**.
-        </p>
-        <p>
-            &copy; Created for
-            <a href="https://www.freecodecamp.com/" target="_blank"
-            >freeCodeCamp <i class="fab fa-free-code-camp"></i
-            ></a>
-        </p>
+        <p>You can reach me at <strong>ignitious1@gmail.com</strong> or <strong>0724548322</strong>.</p>
+        <p>&copy; Created for <a href="https://www.freecodecamp.com/" target="_blank">freeCodeCamp <i class="fab fa-free-code-camp"></i></a></p>
     </footer>
 
+    <!-- BACK TO TOP BUTTON -->
+    <button id="back-to-top"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- SCRIPTS -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js"></script>
 </body>
