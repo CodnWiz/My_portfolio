@@ -193,4 +193,61 @@ footer a { color: var(--accent-color); text-decoration:none; }
     .profile-img { margin-bottom:20px; }
     .projects-grid { grid-template-columns:1fr; }
     }
-    
+    /* Modern gradient accents */
+:root {
+  --accent-gradient: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+}
+
+/* Navbar Glassmorphism */
+.nav {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Gradient text for hero */
+.welcome-section h1 {
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-weight: 800;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Skill cards with modern hover */
+.skill {
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skill:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Project overlay effect */
+.project {
+  position: relative;
+  overflow: hidden;
+}
+.project-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.project:hover .project-title {
+  transform: translateY(-10px);
+}
+
+/* Floating Back-to-Top */
+#back-to-top {
+  background: var(--accent-gradient);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
